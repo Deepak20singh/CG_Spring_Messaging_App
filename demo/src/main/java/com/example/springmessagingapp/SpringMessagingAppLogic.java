@@ -19,4 +19,9 @@ public class SpringMessagingAppLogic {
     }
    //UC2 has been completed
 
+    @GetMapping("/param/{name}")
+    public String sayHelloParam(@PathVariable String name) {
+        return "Hello " + name + "! from BridgeLabz...";
+    }
+//UC3 has been completed
 }
