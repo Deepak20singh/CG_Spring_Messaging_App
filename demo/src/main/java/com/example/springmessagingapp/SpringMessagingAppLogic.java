@@ -13,10 +13,6 @@ public class SpringMessagingAppLogic {
     }
     //UC1 has been completed
 
-    @GetMapping("/query")
-    public String sayhello(@RequestParam(value="name")String name){
-        return "Hello "+name+"! from BridgeLabz...";
-    }
-   //UC2 has been completed
+  
 
 }
