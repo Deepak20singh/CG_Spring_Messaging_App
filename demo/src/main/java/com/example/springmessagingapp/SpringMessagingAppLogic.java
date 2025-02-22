@@ -30,4 +30,9 @@ public class SpringMessagingAppLogic {
 
     }
     //UC4 has been completed
+    @PutMapping("/put/{firstName}")
+    public String putMethod(@PathVariable String firstName,@RequestParam(value = "lastName") String lastName){
+        return "Hello "+firstName+" "+lastName+" from bridgeLabz!!";
+    }
+    //UC5 has been completed
 }
