@@ -24,4 +24,10 @@ public class SpringMessagingAppLogic {
         return "Hello " + name + "! from BridgeLabz...";
     }
 //UC3 has been completed
+    @PostMapping("/post")
+    public String sayhello(@RequestBody UserClass user){
+        return "Hello "+user.getFirstName()+" "+user.getLastName()+" from BridgeLabz!!";
+
+    }
+    //UC4 has been completed
 }
